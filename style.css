@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
+
+:root {
+    --space-font: "Space Mono", sans-serif;
+    --inco-font: "Inconsolata", sans-serif;
+    --mont-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section1 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    width: 1400px;
+    display: flex;
+    font-family: var(--space-font);
+}
+
+.topLeftTitle {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-family: var(--inco-font);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bodyLeft {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyRight {
+    display: flex;
+    flex: 1.3;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+.bodyLeft img {
+    width: 500px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 94.78px;
+}
+
+.bodyRight p {
+    font-size: 24px;
+    line-height: 35.54px;
+    margin: 60px 0;
+    padding-right: 50%;
+}
+
+.bodyRight a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    font-size: 14px;
+    line-height: 20.73px;
+    text-transform: uppercase;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    font-family: var(--mont-font);
+    font-size: 14px;
+}
+
+.bottom span {
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        margin: 80px 0;
+    }
+        
+    .bodyRight {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .bodyRight p {
+        padding-right: 10%;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 71.09px;
+    }
+
+    .bodyRight p {
+        font-size: 18px;
+        line-height: 26.66px;
+    }
+
+    .bodyLeft img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .topLeftTitle {
+        left: 20px;
+    }
+
+    .bodyRight {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}
