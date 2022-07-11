@@ -90,9 +90,14 @@ h1 {
     bottom: 0;
     font-family: var(--mont-font);
     font-size: 14px;
+    color: black;
 }
 
-.bottom span {
+.bottom a {
+    color: inherit;
+}
+
+.bottom a:first-child {
     font-weight: 700;
 }
 
